@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/NotesFragment">
+
+    <fragment
+        android:id="@+id/NotesFragment"
+        android:name="io.neomsoft.a4k_soft.ui.notes.NotesFragment"
+        android:label="@string/fragment_notes_label"
+        tools:layout="@layout/fragment_notes">
+
+        <action
+            android:id="@+id/to_EditNote"
+            app:destination="@id/EditNoteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/EditNoteFragment"
+        android:name="io.neomsoft.a4k_soft.ui.edit.EditNoteFragment"
+        android:label="@string/fragment_edit_note_label"
+        tools:layout="@layout/fragment_edit_note">
+
+        <argument
+            android:name="note"
+            app:argType="io.neomsoft.a4k_soft.data.entities.Note"
+            app:nullable="false" />
+    </fragment>
+</navigation>

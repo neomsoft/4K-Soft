@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">4K-Soft</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- fragment notes -->
+    <string name="fragment_notes_label">Notes</string>
+    <string name="fragment_notes_no_internet_error">No internet</string>
+    <string name="fragment_notes_no_data">No data</string>
+
+    <!-- fragment edit note -->
+    <string name="fragment_edit_note_label">Edit note</string>
+</resources>
